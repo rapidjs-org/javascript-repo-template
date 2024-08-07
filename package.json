@@ -1,0 +1,38 @@
+{
+	"version": "0.1.0",
+	"description": "[TODO]",
+	"author": "[TODO]",
+	"homepage": "[TODO]",
+	"keywords": [],
+	"repository": {
+		"type": "git",
+		"url": "git+[TODO]"
+	},
+	"bugs": {
+		"url": "[TODO]"
+	},
+	"main": "./lib/api.js",
+	"types": "./types.d.ts",
+	"files": [
+		"./lib/",
+		"./types.d.ts"
+	],
+	"scripts": {
+		"prepare": "npx husky",
+		"lint": "npx eslint ./lib/**/*.js",
+		"lint:fix": "npx eslint --fix ./lib/**/*.js",
+		"format": "npx prettier --check ./lib/**/*.js",
+		"format:fix": "npx prettier --write ./lib/**/*.js",
+		"test": "npx rjs-test unit ./test",
+		"utility": "node ./scripts/utility.js"
+	},
+	"devDependencies": {
+		"@rapidjs.org/testing": "^0.1.0",
+		"@rapidjs.org/testing-unit": "^0.1.0",
+		"@eslint/js": "^9.2.0",
+		"eslint": "^8.57.0",
+		"husky": "^9.0.11",
+		"lint-staged": "^15.2.2",
+		"prettier": "^3.2.5"
+	}
+}

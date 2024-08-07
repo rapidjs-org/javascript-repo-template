@@ -1,0 +1,3 @@
+# Javascript Template
+
+[TODO]
